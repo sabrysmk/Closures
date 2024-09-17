@@ -333,12 +333,11 @@ extension UITextField {
      
      * returns: itself so you can daisy chain the other event handler calls
      */
-    @discardableResult
+ @discardableResult
     public func onReturn(handler: @escaping () -> Void) -> Self {
         on(.editingDidEndOnExit) { _,_ in
             handler()
         }
-        return self
     }
 }
 
