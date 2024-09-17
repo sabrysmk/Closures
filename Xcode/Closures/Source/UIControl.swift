@@ -325,20 +325,20 @@ extension UITextField {
         return self
     }
     
-    /**
-     A convenience method to respond to UIControlEvents.editingDidEndOnExit for a UITextField.
-     This occurs when the user taps the return key on the keyboard.
+ //    /**
+ //     A convenience method to respond to UIControlEvents.editingDidEndOnExit for a UITextField.
+ //     This occurs when the user taps the return key on the keyboard.
      
-     * parameter handler: The closure to be called when the return key is tapped
+ //     * parameter handler: The closure to be called when the return key is tapped
      
-     * returns: itself so you can daisy chain the other event handler calls
-     */
- @discardableResult
-    public func onReturn(handler: @escaping () -> Void) -> Self {
-        on(.editingDidEndOnExit) { _,_ in
-            handler()
-        }
-    }
+ //     * returns: itself so you can daisy chain the other event handler calls
+ //     */
+ // @discardableResult
+ //    public func onReturn(handler: @escaping () -> Void) -> Self {
+ //        on(.editingDidEndOnExit) { _,_ in
+ //            handler()
+ //        }
+ //    }
 }
 
 @available(iOS 9.0, *)
